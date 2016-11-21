@@ -4,34 +4,52 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/11/15/hello-world/</loc>
-    <lastmod>2016-11-16T16:50:52.519Z</lastmod>
+    <loc>http://yoursite.com/2016/11/21/AI2/</loc>
+    <lastmod>2016-11-21T03:56:46.599Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2016-11-15T13:13:22.965Z</pubTime>
+        <title>笔记：AI2: Training a big data machine to defend</title>
+        <pubTime>2016-11-21T03:24:02.000Z</pubTime>
         
+        <tag>AI安全</tag>
+         
+        <tag>AI2</tag>
+         
          
            
+             
+              <breadCrumb title="AI" url="http://yoursite.com/categories/AI/"/>
+          
+             
+              <breadCrumb title="AI安全" url="http://yoursite.com/categories/AI/AI%E5%AE%89%E5%85%A8/"/>
+          
         </display>
     </data>
     </url>
 
-    
-    
     
   <url>
-    <loc>http://yoursite.com/2016/11/15/new-post/</loc>
-    <lastmod>2016-11-15T13:25:27.864Z</lastmod>
+    <loc>http://yoursite.com/2016/11/21/Game-Theory-with-Learning-for-Cyber-Security-Monitoring/</loc>
+    <lastmod>2016-11-21T03:56:41.735Z</lastmod>
     <data>
         <display>
-        <title>new-post</title>
-        <pubTime>2016-11-15T13:25:27.000Z</pubTime>
+        <title>笔记：Game Theory with Learning for Cyber Security Monitoring</title>
+        <pubTime>2016-11-21T03:47:20.000Z</pubTime>
         
+        <tag>AI安全</tag>
+         
          
            
+             
+              <breadCrumb title="AI" url="http://yoursite.com/categories/AI/"/>
+          
+             
+              <breadCrumb title="AI安全" url="http://yoursite.com/categories/AI/AI%E5%AE%89%E5%85%A8/"/>
+          
         </display>
     </data>
     </url>
 
+    
+    
 </urlset>
