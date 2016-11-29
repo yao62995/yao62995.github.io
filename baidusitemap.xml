@@ -4,14 +4,52 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/11/21/AI2/</loc>
-    <lastmod>2016-11-21T03:56:46.599Z</lastmod>
+    <loc>http://yoursite.com/2016/11/29/Generic-Algorithms-based-Traveller-Salesman-Problem/</loc>
+    <lastmod>2016-11-29T08:16:43.422Z</lastmod>
     <data>
         <display>
-        <title>笔记：AI2: Training a big data machine to defend</title>
+        <title></title>
+        <pubTime>2016-11-29T08:04:00.513Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/11/21/Game-Theory-with-Learning-for-Cyber-Security-Monitoring/</loc>
+    <lastmod>2016-11-21T05:21:50.580Z</lastmod>
+    <data>
+        <display>
+        <title>�ʼǣ�Game Theory with Learning for Cyber Security Monitoring</title>
+        <pubTime>2016-11-21T03:47:20.000Z</pubTime>
+        
+        <tag>AI��ȫ</tag>
+         
+         
+           
+             
+              <breadCrumb title="AI" url="http://yoursite.com/categories/AI/"/>
+          
+             
+              <breadCrumb title="AI��ȫ" url="http://yoursite.com/categories/AI/AI%EF%BF%BD%EF%BF%BDo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/11/21/AI2/</loc>
+    <lastmod>2016-11-21T05:19:02.412Z</lastmod>
+    <data>
+        <display>
+        <title>�ʼǣ�AI2: Training a big data machine to defend</title>
         <pubTime>2016-11-21T03:24:02.000Z</pubTime>
         
-        <tag>AI安全</tag>
+        <tag>AI��ȫ</tag>
          
         <tag>AI2</tag>
          
@@ -21,30 +59,7 @@
               <breadCrumb title="AI" url="http://yoursite.com/categories/AI/"/>
           
              
-              <breadCrumb title="AI安全" url="http://yoursite.com/categories/AI/AI%E5%AE%89%E5%85%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/11/21/Game-Theory-with-Learning-for-Cyber-Security-Monitoring/</loc>
-    <lastmod>2016-11-21T03:56:41.735Z</lastmod>
-    <data>
-        <display>
-        <title>笔记：Game Theory with Learning for Cyber Security Monitoring</title>
-        <pubTime>2016-11-21T03:47:20.000Z</pubTime>
-        
-        <tag>AI安全</tag>
-         
-         
-           
-             
-              <breadCrumb title="AI" url="http://yoursite.com/categories/AI/"/>
-          
-             
-              <breadCrumb title="AI安全" url="http://yoursite.com/categories/AI/AI%E5%AE%89%E5%85%A8/"/>
+              <breadCrumb title="AI��ȫ" url="http://yoursite.com/categories/AI/AI%EF%BF%BD%EF%BF%BDo/"/>
           
         </display>
     </data>
