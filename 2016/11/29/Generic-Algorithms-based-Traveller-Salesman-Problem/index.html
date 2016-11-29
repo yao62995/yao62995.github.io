@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="�㷨," />
+  <meta name="keywords" content="算法," />
 
 
 
@@ -86,15 +86,15 @@
 
 <meta name="description" content="Description of Generic Algorithms based Traveller Salesman Problem.Source Code">
 <meta property="og:type" content="article">
-<meta property="og:title" content="�����Ŵ��㷨������������">
+<meta property="og:title" content="基于遗传算法的旅行商问题">
 <meta property="og:url" content="http://yoursite.com/2016/11/29/Generic-Algorithms-based-Traveller-Salesman-Problem/index.html">
 <meta property="og:site_name" content="Yao62995">
 <meta property="og:description" content="Description of Generic Algorithms based Traveller Salesman Problem.Source Code">
 <meta property="og:image" content="http://yoursite.com/2016/11/29/Generic-Algorithms-based-Traveller-Salesman-Problem/GA-TSP.png">
 <meta property="og:image" content="http://yoursite.com/2016/11/29/Generic-Algorithms-based-Traveller-Salesman-Problem/ga.png">
-<meta property="og:updated_time" content="2016-11-29T08:28:41.237Z">
+<meta property="og:updated_time" content="2016-11-29T08:30:22.164Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="�����Ŵ��㷨������������">
+<meta name="twitter:title" content="基于遗传算法的旅行商问题">
 <meta name="twitter:description" content="Description of Generic Algorithms based Traveller Salesman Problem.Source Code">
 <meta name="twitter:image" content="http://yoursite.com/2016/11/29/Generic-Algorithms-based-Traveller-Salesman-Problem/GA-TSP.png">
 
@@ -130,7 +130,7 @@
 
 
 
-  <title> �����Ŵ��㷨������������ | Yao62995 </title>
+  <title> 基于遗传算法的旅行商问题 | Yao62995 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -275,7 +275,7 @@
             
             
               
-                �����Ŵ��㷨������������
+                基于遗传算法的旅行商问题
               
             
           </h1>
@@ -307,8 +307,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/�㷨/" itemprop="url" rel="index">
-                    <span itemprop="name">�㷨</span>
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
                   </a>
                 </span>
 
@@ -358,80 +358,80 @@
       
         <p>Description of Generic Algorithms based Traveller Salesman Problem.<br><a href="https://github.com/yao62995/GA-based-TSP" target="_blank" rel="external">Source Code</a></p>
 <a id="more"></a>
-<h2 id="��������"><a href="#��������" class="headerlink" title="��������"></a>��������</h2><p>������ͼ�ϵ����ɵص㼰��Ӧ��γ�ȣ��ҳ�һ�������е㴮������������·������TSP���⡣TSP�����������ռ���n�������������У����ռ�Ϊn!����������<a href="https://zh.wikipedia.org/wiki/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95" target="_blank" rel="external">�Ŵ��㷨</a>��˼������TSP���⡣</p>
-<h2 id="�W��㷨����"><a href="#�W��㷨����" class="headerlink" title="�Ŵ��㷨����"></a>�Ŵ��㷨����</h2><h4 id="��A������"><a href="#��A������" class="headerlink" title="��Ⱥ������"></a>��Ⱥ������</h4><ul>
-<li>��Ⱥ����Ⱥ�����������еĶ����ԡ���ȺԽ�󣬶�����Խ�ḻ��Խ���ҵ�����Ⱦɫ�壬��������Ҳ���Ӵ�</li>
-<li>Ⱦɫ�壺���������У�������ʾ�ض���·���������С�һ���������д���һ�����塣<h4 id="���캯��"><a href="#���캯��" class="headerlink" title="���캯��"></a>���캯��</h4></li>
-<li>�������ӣ�ͨ��ָ����Ⱦɫ�彻���任��������ʾת�Ʊ��죬��Ⱦɫ����һ������Ƭ������һ������Ƭ���û���<ul>
-<li>���磺 AB<code>CD</code>EF<code>GH</code>  =&gt;  AB<code>GH</code>EF<code>CD</code></li>
+<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>给定地图上的若干地点及对应经纬度，找出一条将所有点串联起来的最短路径，即TSP问题。TSP问题的搜索空间是n个点的所有排列，解空间为n!。本文利用<a href="https://zh.wikipedia.org/wiki/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95" target="_blank" rel="external">遗传算法</a>的思想解决TSP问题。</p>
+<h2 id="遗传算法描述"><a href="#遗传算法描述" class="headerlink" title="遗传算法描述"></a>遗传算法描述</h2><h4 id="种群与个体"><a href="#种群与个体" class="headerlink" title="种群与个体"></a>种群与个体</h4><ul>
+<li>种群：种群代表基因序列的多样性。种群越大，多样性越丰富，越快找到最优染色体，但运算量也会加大</li>
+<li>染色体：即基因序列，这里表示特定的路径编号序列。一个编号序列代表一个个体。<h4 id="变异函数"><a href="#变异函数" class="headerlink" title="变异函数"></a>变异函数</h4></li>
+<li>交叉算子：通常指两个染色体交叉变换，这里表示转移变异，将染色体中一个随机片段与另一个随机片段置换。<ul>
+<li>例如： AB<code>CD</code>EF<code>GH</code>  =&gt;  AB<code>GH</code>EF<code>CD</code></li>
 </ul>
 </li>
-<li>�������ӣ�ͨ��ָ�ı��������봮�е�ĳЩ����ֵ��������ʾ��ĳ��Ƭ��������<ul>
-<li>���磺 AB<code>CDEF</code>GH  =&gt;  AB<code>FEDC</code>GH<h4 id="��Ӧ�A���"><a href="#��Ӧ�A���" class="headerlink" title="��Ӧ�Ⱥ���"></a>��Ӧ�Ⱥ���</h4></li>
+<li>变异算子：通常指改变个体编码串中的某些基因值，这里表示将某个片段逆序。<ul>
+<li>例如： AB<code>CDEF</code>GH  =&gt;  AB<code>FEDC</code>GH<h4 id="适应度函数"><a href="#适应度函数" class="headerlink" title="适应度函数"></a>适应度函数</h4></li>
 </ul>
 </li>
-<li>����һ�������û���ָ�꣬��Ӧ�Ⱥ���ֵԽ�󣬽�������Խ�á�<ul>
-<li>��Ӧ��ָ�꣺<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">E = \frac&#123;1.0&#125;&#123;\sum_&#123;i=0&#125;^&#123;n-1&#125; (D[i][i+1]) + D[n-1][0]&#125;</div></pre></td></tr></table></figure>
+<li>评价一个个体好坏的指标，适应度函数值越大，解的质量越好。<ul>
+<li>适应度指标：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">E = \frac&#123;1.0&#125;&#123;\sum_&#123;i=0&#125;^&#123;n-1&#125; (D[i][i+1]) + D[n-1][0]&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 </ul>
-<p>����<code>D[i][i+1]</code>��ʾ�ص�<code>i</code>���ص�<code>j</code>�ľ���</p>
+<p>其中<code>D[i][i+1]</code>表示地点<code>i</code>到地点<code>j</code>的距离</p>
 <ul>
-<li>�������㹫ʽ��<ul>
-<li>�ϱ�����<code>AM</code> = �����뾶 * γ�Ȳ� * Math.PI/180.0��</li>
-<li>��������<code>BM</code> = �����뾶 * ���Ȳ� * Cos&lt;����γ���� * Math.PI/180.0&gt;</li>
-<li><code>���� = sqrt(AM \* AM + BM \* BM)</code><h4 id="ѡ������"><a href="#ѡ������" class="headerlink" title="ѡ������"></a>ѡ������</h4></li>
+<li>距离计算公式：<ul>
+<li>南北方向<code>AM</code> = 地球半径 * 纬度差 * Math.PI/180.0；</li>
+<li>东西方向<code>BM</code> = 地球半径 * 经度差 * Cos&lt;当地纬度数 * Math.PI/180.0&gt;</li>
+<li><code>距离 = sqrt(AM \* AM + BM \* BM)</code><h4 id="选择算子"><a href="#选择算子" class="headerlink" title="选择算子"></a>选择算子</h4></li>
 </ul>
 </li>
-<li>ѡ�����ӣ����ڶԸ���������ʤ��̭�Ĳ�����ɸѡ��������Ӧ�ȸߵĸ����Ŵ�����һ����</li>
-<li><strong>���̶�</strong>���ֳƱ���ѡ�����ӣ��������屻ѡ�еĸ���������Ӧ�Ⱥ���ֵ��С�����ȡ����̶��ǳ��õ�ѡ���㷨</li>
+<li>选择算子：用于对个体进行优胜劣汰的操作，筛选出部分适应度高的个体遗传到下一代。</li>
+<li><strong>轮盘赌</strong>：又称比例选择算子，各个个体被选中的概率与其适应度函数值大小成正比。轮盘赌是常用的选择算法</li>
 </ul>
-<h4 id="�ֱ�"><a href="#�ֱ�" class="headerlink" title="�ֱ�"></a>�ֱ�</h4><ul>
-<li><strong>����</strong>���Ŵ��㷨ͨ������ʵ�ֿռ���������Ӧ�Ⱥ������Ŵ��㷨������Ӱ���ܴ󣬵��Ŵ��㷨��Ȼ�п��������ֲ����š������Ÿ��������������Ŵ�ʱ�����ֲ���ʱ��������Ϊ�����ֲ����ţ����ǿ���ͨ���ֱ������ֲ����š�</li>
-<li><strong>����</strong>���ֱ伴���������������ֵĵ�����������ʾ������ȺȾɫ�����³�ʼ����</li>
-<li><strong>�ֱ䵹��ʱ</strong>������˵���������ֱ���ʼֵΪ500���ֱ䱶����Ϊ2.5�����ֱ���ʼֵ500��ʼ��ÿһ���ݼ�һ�Σ������������µ�����ֵ���ʹ��¿�ʼ����<ol>
-<li>��������������ֵ��ʱ�򵹼����ݼ�������2.5���Ѿ�����500�����ӳ���500���³�ʼֵ��ʼ������</li>
-<li>��δ����500������500��Ϊ��ʼֵ��ʼ������</li>
+<h4 id="灾变"><a href="#灾变" class="headerlink" title="灾变"></a>灾变</h4><ul>
+<li><strong>引入</strong>：遗传算法通过变异实现空间搜索，适应度函数对遗传算法收敛性影响很大，但遗传算法仍然有可能陷入局部最优。当最优个体在连续多代遗传时都保持不变时，可以认为陷入局部最优，这是可以通过灾变跳出局部最优。</li>
+<li><strong>概念</strong>：灾变即物种灭绝，新物种的诞生。这里表示所有种群染色体重新初始化。</li>
+<li><strong>灾变倒计时</strong>：举例说明：假设灾变初始值为500，灾变倍增数为2.5，从灾变初始值500开始，每一代递减一次，如果出现了新的最优值，就从新开始计数<ol>
+<li>如果出现新最优值的时候倒计数递减次数的2.5倍已经超过500，则从超过500的新初始值开始倒数。</li>
+<li>若未超过500，则把500作为初始值开始倒数。</li>
 </ol>
 </li>
 </ul>
-<h4 id="�����Z�"><a href="#�����Z�" class="headerlink" title="�����Ż�"></a>�����Ż�</h4><ul>
-<li>�ı����Ż�<ul>
-<li>��Ⱦɫ������������4�������ɵĶ����β���͹�ı���ʱ��ת��Ϊ͹�ı��Ρ�</li>
+<h4 id="其他优化"><a href="#其他优化" class="headerlink" title="其他优化"></a>其他优化</h4><ul>
+<li>四边形优化<ul>
+<li>若染色体序列中相邻4个点组成的多边形不是凸四边形时，转换为凸四边形。</li>
 </ul>
 </li>
 </ul>
-<h2 id="�㷨����ͼ"><a href="#�㷨����ͼ" class="headerlink" title="�㷨����ͼ"></a>�㷨����ͼ</h2><img src="/2016/11/29/Generic-Algorithms-based-Traveller-Salesman-Problem/GA-TSP.png" alt="GA-TSP.png" title="">
-<h2 id="�㷨���н�����"><a href="#�㷨���н�����" class="headerlink" title="�㷨���н�����"></a>�㷨���н�����</h2><ul>
-<li>���ó�����500������������ ����~(30.0, 40.0)��γ��~(110.0, 130.0)֮���ĳ���<ul>
-<li>���о���û��ʹ������ģ�ͼ��㣬�������¼򻯵ļ��㷽����<ul>
-<li>�ϱ�����AM = �����뾶 * γ�Ȳ� * Math.PI/180.0��</li>
-<li>��������BM = �����뾶 * ���Ȳ� * Cos&lt;����γ���� * Math.PI/180.0&gt;</li>
-<li>���� = sqrt(AM*AM + BM*BM)</li>
+<h2 id="算法流程图"><a href="#算法流程图" class="headerlink" title="算法流程图"></a>算法流程图</h2><img src="/2016/11/29/Generic-Algorithms-based-Traveller-Salesman-Problem/GA-TSP.png" alt="GA-TSP.png" title="">
+<h2 id="算法运行结果："><a href="#算法运行结果：" class="headerlink" title="算法运行结果："></a>算法运行结果：</h2><ul>
+<li>设置城市数500，将随机生成 经度~(30.0, 40.0)，纬度~(110.0, 130.0)之间的城市<ul>
+<li>城市距离没有使用球面模型计算，而是如下简化的计算方法：<ul>
+<li>南北方向AM = 地球半径 * 纬度差 * Math.PI/180.0；</li>
+<li>东西方向BM = 地球半径 * 经度差 * Cos&lt;当地纬度数 * Math.PI/180.0&gt;</li>
+<li>距离 = sqrt(AM*AM + BM*BM)</li>
 </ul>
 </li>
 <li>reference: <a href="http://tech.meituan.com/lucene-distance.html" target="_blank" rel="external">http://tech.meituan.com/lucene-distance.html</a></li>
 </ul>
 </li>
-<li>�Ŵ��㷨����:<ul>
-<li>��Ⱥ������Ⱥ��Խ�����Ŵ�����������Խ�ḻ</li>
-<li>��Ů����ÿ����Ⱥ�Ŵ�������һ������Ů��</li>
-<li>����ת����������ʱ���������������������г��ȣ�����ֵԽ�󣬱�����Խ��</li>
-<li><strong><em>�ֱ�</em></strong>���ֱ���ʼֵ���ֱ䱶��ֵ<ul>
-<li>�ֱ��ĸ�������趨�����Ÿ��������������Ŵ�ʱ�����ֲ��䣬�������ֱ䵹��ʱ��<br>������ʱΪ0ʱ��ʾ��ǰ��Ⱥ����<strong><em>�ֲ�����</em></strong>������Ⱥ�������ã���������������������������</li>
+<li>遗传算法参数:<ul>
+<li>种群数：种群数越大，遗传基因多样性越丰富</li>
+<li>子女数：每个种群遗传产生下一代的子女数</li>
+<li>最大转移数：变异时两个基因产生交叉的序列长度，该数值越大，变异性越大</li>
+<li><strong><em>灾变</em></strong>：灾变初始值，灾变倍增值<ul>
+<li>灾变的概念：这里设定当最优个体在连续多代遗传时都保持不变，就启动灾变倒计时。<br>当倒计时为0时表示当前种群陷入<strong><em>局部最优</em></strong>，将种群基因重置，类似于物种灭绝并产生新物种</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>���ó�������ʱ��20�룬���õ���ģʽΪtrue</li>
-<li><p>Result of Execution��</p>
+<li>设置程序运行时间20秒，设置调试模式为true</li>
+<li><p>Result of Execution：</p>
 <pre><code>[work@localhost test]$ python analysis.py 
-time_out: 2000 , state:  500������ ��2776�� ���Ų����ڵ�2763�� ����0.186737 ����34096140.417267 �ֱ䵹����0788 �ֱ�����000 Ⱥ��ƽ����0.143186 ��ʱ2000(ms)
-time_out: 4000 , state:  500������ ��5695�� ���Ų����ڵ�5682�� ����0.237647 ����26791815.559546 �ֱ䵹����0788 �ֱ�����000 Ⱥ��ƽ����0.173504 ��ʱ4000(ms)
-time_out: 6000 , state:  500������ ��8691�� ���Ų����ڵ�8618�� ����0.258155 ����24663463.804994 �ֱ䵹����0728 �ֱ�����000 Ⱥ��ƽ����0.196991 ��ʱ6010(ms)
-time_out: 8000 , state:  500������ ��11644�� ���Ų����ڵ�11640�� ����0.280567 ����22693316.459644 �ֱ䵹����0797 �ֱ�����000 Ⱥ��ƽ����0.216620 ��ʱ8010(ms)
-time_out: 10000 , state:  500������ ��14671�� ���Ų����ڵ�14565�� ����0.291937 ����21809472.816275 �ֱ䵹����0695 �ֱ�����000 Ⱥ��ƽ����0.188085 ��ʱ10010(ms)
+time_out: 2000 , state:  500个城市 第2776代 最优产生于第2763代 分数0.186737 里程34096140.417267 灾变倒计数0788 灾变计数000 群体平均分0.143186 用时2000(ms)
+time_out: 4000 , state:  500个城市 第5695代 最优产生于第5682代 分数0.237647 里程26791815.559546 灾变倒计数0788 灾变计数000 群体平均分0.173504 用时4000(ms)
+time_out: 6000 , state:  500个城市 第8691代 最优产生于第8618代 分数0.258155 里程24663463.804994 灾变倒计数0728 灾变计数000 群体平均分0.196991 用时6010(ms)
+time_out: 8000 , state:  500个城市 第11644代 最优产生于第11640代 分数0.280567 里程22693316.459644 灾变倒计数0797 灾变计数000 群体平均分0.216620 用时8010(ms)
+time_out: 10000 , state:  500个城市 第14671代 最优产生于第14565代 分数0.291937 里程21809472.816275 灾变倒计数0695 灾变计数000 群体平均分0.188085 用时10010(ms)
 </code></pre></li>
 </ul>
 <img src="/2016/11/29/Generic-Algorithms-based-Traveller-Salesman-Problem/ga.png" alt="ga.png" title="">
@@ -458,7 +458,7 @@ time_out: 10000 , state:  500������ ��14671�� ���Ų�
       
         <div class="post-tags">
           
-            <a href="/tags/�㷨/" rel="tag"># �㷨</a>
+            <a href="/tags/算法/" rel="tag"># 算法</a>
           
         </div>
       
@@ -467,8 +467,8 @@ time_out: 10000 , state:  500������ ��14671�� ���Ų�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/21/Game-Theory-with-Learning-for-Cyber-Security-Monitoring/" rel="next" title="�ʼǣ�Game Theory with Learning for Cyber Security Monitoring">
-                <i class="fa fa-chevron-left"></i> �ʼǣ�Game Theory with Learning for Cyber Security Monitoring
+              <a href="/2016/11/21/Game-Theory-with-Learning-for-Cyber-Security-Monitoring/" rel="next" title="笔记：Game Theory with Learning for Cyber Security Monitoring">
+                <i class="fa fa-chevron-left"></i> 笔记：Game Theory with Learning for Cyber Security Monitoring
               </a>
             
           </div>
@@ -502,7 +502,7 @@ time_out: 10000 , state:  500������ ��14671�� ���Ų�
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/11/29/Generic-Algorithms-based-Traveller-Salesman-Problem/"
-           data-title="�����Ŵ��㷨������������" data-url="http://yoursite.com/2016/11/29/Generic-Algorithms-based-Traveller-Salesman-Problem/">
+           data-title="基于遗传算法的旅行商问题" data-url="http://yoursite.com/2016/11/29/Generic-Algorithms-based-Traveller-Salesman-Problem/">
       </div>
     
   </div>
@@ -633,7 +633,7 @@ time_out: 10000 , state:  500������ ��14671�� ���Ų�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#��������"><span class="nav-number">1.</span> <span class="nav-text">��������</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#�W��㷨����"><span class="nav-number">2.</span> <span class="nav-text">�Ŵ��㷨����</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#��A������"><span class="nav-number">2.0.1.</span> <span class="nav-text">��Ⱥ������</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#���캯��"><span class="nav-number">2.0.2.</span> <span class="nav-text">���캯��</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#��Ӧ�A���"><span class="nav-number">2.0.3.</span> <span class="nav-text">��Ӧ�Ⱥ���</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ѡ������"><span class="nav-number">2.0.4.</span> <span class="nav-text">ѡ������</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#�ֱ�"><span class="nav-number">2.0.5.</span> <span class="nav-text">�ֱ�</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#�����Z�"><span class="nav-number">2.0.6.</span> <span class="nav-text">�����Ż�</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#�㷨����ͼ"><span class="nav-number">3.</span> <span class="nav-text">�㷨����ͼ</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#�㷨���н�����"><span class="nav-number">4.</span> <span class="nav-text">�㷨���н�����</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遗传算法描述"><span class="nav-number">2.</span> <span class="nav-text">遗传算法描述</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#种群与个体"><span class="nav-number">2.0.1.</span> <span class="nav-text">种群与个体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变异函数"><span class="nav-number">2.0.2.</span> <span class="nav-text">变异函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#适应度函数"><span class="nav-number">2.0.3.</span> <span class="nav-text">适应度函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选择算子"><span class="nav-number">2.0.4.</span> <span class="nav-text">选择算子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#灾变"><span class="nav-number">2.0.5.</span> <span class="nav-text">灾变</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他优化"><span class="nav-number">2.0.6.</span> <span class="nav-text">其他优化</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法流程图"><span class="nav-number">3.</span> <span class="nav-text">算法流程图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法运行结果："><span class="nav-number">4.</span> <span class="nav-text">算法运行结果：</span></a></li></ol></div>
             
 
           </div>
